@@ -1,3 +1,4 @@
+## This function is going to cache the inverse of a matrix:
 ## Matrix inversion may be a costly computation and there may be some 
 ## benefit to caching the inverse rather than compute it everytime.
 ## So I would create a special object that can store the matrix and
@@ -6,7 +7,7 @@
 ## This function creates a "matrix" object to cache its inverse
 
 makeCacheMatrix <- function(x = matrix()) {
-	inv <- Null
+	inv <<- Null
 	set <- function(y) {
 			x <<- y
 			inverse <<- Null
